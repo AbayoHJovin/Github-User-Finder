@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <link rel="stylesheet" href="./api.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
-    <div class="divs">
-      
-      <input type="search" id="userName" placeholder="Enter your github username"/>
-      <button id="searchB">Search</button>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="input-group">
+              <input type="search" class="form-control" id="userName" placeholder="Enter your GitHub username">
+              <div class="input-group-append">
+                <button class="btn btn-primary" id="searchB">Search</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="results"></div>
     </div>
     <script src="./api.js"></script>
-  </body>
 </html>
